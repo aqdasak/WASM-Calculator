@@ -1,7 +1,10 @@
+body {
+  background: #e8995b;
+}
 .container {
   width: 18rem;
 }
-#expr {
+#expression {
   height: 0.8rem;
 }
 
@@ -19,4 +22,12 @@
 
 button {
   height: 3.5rem;
+  color: white;
+  background: #d9751d;
+}
+button:hover {
+  background-color: #e1812d;
+}
+button:active {
+  color: black;
 }

@@ -28,8 +28,8 @@ fn app() -> Html {
         <>
             <center>
                 <h1>{ "Calculator" }</h1>
-                <p id="expr">{&*calculate}</p>
-                <h5>{eval(&*calculate)}</h5>
+                <p id="expression">{&*calculate}</p>
+                <p>{eval(&*calculate)}</p>
                 <div class="container">
                     <div id="calpad-clear">
                         <button onclick={clear}>{"⌫"}</button>

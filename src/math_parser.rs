@@ -1,14 +1,20 @@
 pub fn eval(expr: &str) -> f64 {
+    fn parse(num: &str) -> f64 {
+        return match num.parse::<f64>() {
+            Ok(n) => n,
+            Err(_) => 0.0,
+        };
+    }
     fn step_4_split_div(expr: &str) -> f64 {
         let mut div: f64 = 1.0;
         let mut is_div_set = false;
         for i in expr.split("/").collect::<Vec<&str>>() {
             if i != "" {
                 if !is_div_set {
-                    div = i.parse::<f64>().unwrap();
+                    div = parse(i);
                     is_div_set = true;
                 } else {
-                    div = div / i.parse::<f64>().unwrap();
+                    div = div / parse(i);
                 }
             }
         }
