@@ -1,0 +1,22 @@
+.container {
+  width: 18rem;
+}
+#expr {
+  height: 0.8rem;
+}
+
+#calpad-clear {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  margin-bottom: 0.1rem;
+}
+#calpad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+button {
+  height: 3.5rem;
+}
